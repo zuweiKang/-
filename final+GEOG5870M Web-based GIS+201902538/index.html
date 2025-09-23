@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leeds Leisure Centres</title>
+    
+    <!-- link to the Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+    <!-- link to the Leaflet JavaScript library-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <!-- link to the stylesheet-->
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- link to the JQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- link to your JS file-->
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+	
+
+</head>
+
+<body>
+
+ <!--  Header  -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-image">
+        <img src="image/1.jpg" alt="Leeds Leisure Centres">
+      </div>
+      <div class="title-group">
+    <h1 class="site-title">Leeds Leisure Centres</h1>
+    <p class="tagline">Your guide to fitness & fun in Leeds</p>
+  </div>
+    </div>
+
+  </header>
+  
+  <nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="map.html">Map</a> <!-- Navigate to map page-->
+  <a href="centres.html">Centres list</a> <!-- Navigate to centers page -->
+  <a href="Opening Hours.html">Opening Hours</a> <!-- Navigate to opening hours page -->
+
+</nav>
+  
+  <div class="container">
+
+    <!-- Hero Section (Homepage Welcome Banner)） -->
+  <section class="hero">
+    <h2>Discover Local Leisure Centres in Leeds</h2>
+    <p>Find activities, opening times, and contact info near you!</p>
+	
+	
+  
+    <div class="cta-buttons">
+      <!--Load map after button click- -->
+      <button id="showMapButton">View Map</button>
+	  <button id="hideMapButton">Hide Map</button>
+      <button id="browseCentres">Browse Centres</button>
+	  <button id="clearData">Clear Markers</button>
+    </div>
+  <!-- map-container -->
+  <div id="map-container">
+    <div id="mapdiv"></div>
+  </div>
+  
+  </section>
+
+   
+    <!--  Feature Highlights Card Style -->
+<section class="features">
+  <div>
+    <a href="map.html" class="feature-card">
+	<h3 class="icon-title">
+  <img src="image/map.jpg" alt="Map Icon">
+  <span>Interactive Map</span>
+</h3>
+      <p>Explore centres near you on a dynamic map.</p>
+    </a>
+  </div>
+  <div>
+    <a href="centres.html" class="feature-card">
+	  <h3 class="icon-title">
+  <img src="image/center.jpg" alt="Map Icon">
+  <span>Centre Directory</span>
+</h3>
+      <p>View full list of Leeds leisure centres and details.</p>
+    </a>
+  </div>
+  <div>
+    <a href="Opening Hours.html" class="feature-card">
+	  <h3 class="icon-title">
+  <img src="image/timetable1.jpg" alt="Map Icon">
+  <span> Easy Timetables</span>
+</h3>
+      <p>See opening hours at a glance for every centre.</p>
+    </a>
+  </div>
+  
+</section>
+
+
+    <!--  About section  -->
+    <section class="about">
+      <h2>About This Website</h2>
+      <p>
+        This platform is built to help residents and visitors discover Leeds' leisure centres quickly and efficiently.
+        Whether you're looking for fitness facilities, swimming pools, or open hours – we’ve got you covered.
+      </p>
+    </section>
+
+  </div>
+
+  <!--  Footer  -->
+  <footer>
+    <p>&copy; 2025 Leeds Leisure Centres | Data provided by <a href="https://www.leeds.gov.uk" target="_blank">Leeds City Council</a></p>
+  </footer>
+    
+</body>
+</html>

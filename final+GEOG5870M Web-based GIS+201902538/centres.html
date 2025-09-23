@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centre list - Leeds Leisure Centres</title>
+    
+    <!-- link to the Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+    <!-- link to the Leaflet JavaScript library-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <!-- link to the stylesheet-->
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- link to the JQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- link to your JS file-->
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+	
+</head>
+
+<body>
+ <!--  Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-image">
+        <img src="image/1.jpg" alt="Leeds Leisure Centres">
+      </div>
+      <div class="title-group">
+    <h1 class="site-title">Leeds Leisure Centres-Centres list</h1>
+    <p class="tagline">Your guide to fitness & fun in Leeds</p>
+  </div>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="map.html">Map</a> <!-- Navigate to map page -->
+  <a href="centres.html">Centres list</a> <!-- Navigate to centers page-->
+  <a href="Opening Hours.html">Opening Hours</a> <!-- Navigate to opening hours page-->
+</nav>
+  
+
+  <!-- Search and service filter section -->
+<section class="controls">
+  <input type="text" id="searchBox" placeholder="Search by name or area..." onkeyup="filterCentres()" />
+  
+  <!-- Service filter dropdown menu -->
+  <form id="serviceForm" method="POST" onsubmit="filterCentres(event)">
+    <select name="service" id="serviceFilter">
+      <option value="">All Services</option>
+       <option value="accessibilityChangingAndShowerFacilities">accessibilityChangingAndShowerFacilities</option>
+       <option value="adaptedChangingRoomAndToilet">adaptedChangingRoomAndToilet</option>
+       <option value="adaptedToilet">adaptedToilet</option>
+<option value="adultSocialCareAndDisabilityServices">adultSocialCareAndDisabilityServices</option>
+<option value="automaticDoor">automaticDoor</option>
+<option value="disabledToilet">disabledToilet</option>
+<option value="handrailsOnStairsAndSpectatorAreas">handrailsOnStairsAndSpectatorAreas</option>
+<option value="inductionLoop">inductionLoop</option>
+<option value="levelEntrance">levelEntrance</option>
+<option value="liftAccess">liftAccess</option>
+<option value="poolHoist">poolHoist</option>
+<option value="rampedAccess">rampedAccess</option>
+<option value="tennisWheelchairs">tennisWheelchairs</option>
+<option value="archery">archery</option>
+<option value="astroTurfPitch">astroTurfPitch</option>
+<option value="badmintonCentre">badmintonCentre</option>
+<option value="bellBoat">bellBoat</option>
+<option value="boatHire">boatHire</option>
+<option value="bowlsHall">bowlsHall</option>
+<option value="cafeBar">cafeBar</option>
+<option value="canoeing">canoeing</option>
+<option value="climbing">climbing</option>
+<option value="climbingWall">climbingWall</option>
+<option value="footballPitch">footballPitch</option>
+<option value="freeParking">freeParking</option>
+<option value="gym">gym</option>
+<option value="hydrotherapyPool">hydrotherapyPool</option>
+<option value="indoorTrackAndField">indoorTrackAndField</option>
+<option value="kayaking">kayaking</option>
+<option value="meetingRoom">meetingRoom</option>
+<option value="offRoadBiking">offRoadBiking</option>
+<option value="orienteering">orienteering</option>
+<option value="outDoorTrackAndField">outDoorTrackAndField</option>
+<option value="powerboat">powerboat</option>
+<option value="Sailing">Sailing</option>
+<option value="sportsHall">sportsHall</option>
+<option value="squashCourts">squashCourts</option>
+<option value="studio">studio</option>
+<option value="swimmingPool">swimmingPool</option>
+<option value="tennisCourts">tennisCourts</option>
+<option value="wiFi">wiFi</option>
+<option value="windsurfing">windsurfing</option>
+   </select>
+    <input type="submit" value="Filter" />
+  </form>
+</section>
+
+<!--Centers list section-->
+<section class="centre-list" id="centreList">
+  
+</section>
+  
+  
+  <!--  Footer  -->
+  <footer>
+    <p>&copy; 2025 Leeds Leisure Centres | Data provided by <a href="https://www.leeds.gov.uk" target="_blank">Leeds City Council</a></p>
+  </footer>
+    
+</body>
+</html>

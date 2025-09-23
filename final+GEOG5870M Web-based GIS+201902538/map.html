@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map - Leeds Leisure Centres</title>
+    
+    <!-- link to the Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+    <!-- link to the Leaflet JavaScript library-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <!-- link to the stylesheet-->
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- link to the JQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- link to your JS file-->
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+	
+</head>
+<body>
+ <!--  Header  -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-image">
+        <img src="image/1.jpg" alt="Leeds Leisure Centres">
+      </div>
+      <div class="title-group">
+    <h1 class="site-title">Leeds Leisure Centres-Interactive Map</h1>
+    <p class="tagline">Your guide to fitness & fun in Leeds</p>
+  </div>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="map.html">Map</a> <!-- Navigate to map page  -->
+  <a href="centres.html">Centres list</a> <!-- Navigate to centers page -->
+  <a href="Opening Hours.html">Opening Hours</a> <!-- Navigate to opening hours page -->
+  
+</nav>
+  
+  
+  <div id="map-container">
+    <div id="mapdiv"></div>
+  </div>
+  <div class="cta-buttons">
+      <!-- Load map after button click-->
+      <button id="showMapButton">View Map</button>
+	  <button id="hideMapButton">Hide Map</button>
+      <button id="browseCentres">Browse Centres</button>
+	  <button id="clearData">Clear Markers</button>
+    </div>
+<!--  Footer  -->
+  <footer>
+    <p>&copy; 2025 Leeds Leisure Centres | Data provided by <a href="https://www.leeds.gov.uk" target="_blank">Leeds City Council</a></p>
+  </footer>
+    
+</body>
+</html>

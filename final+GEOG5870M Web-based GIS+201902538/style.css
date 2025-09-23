@@ -1,0 +1,486 @@
+/* Basic structure settings */
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF8F0; 
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*  Header  */
+.site-header {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('image/Header5.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  border-bottom: 5px solid #FF9EB6;
+}
+
+/* Title and image container */
+.header-container {
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  gap: 20px; /* Increase the space between the image and title */
+  padding-top: 30px;
+}
+
+
+/* Image style */
+.header-image img {
+  width: 120px; /* Increase image size */
+  height: 120px; /* Increase image height */
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow effect */
+  border: 4px solid #FFFBC2; /* Add a yellow border consistent with the title */
+  transition: all 0.3s ease-in-out; /* Add interaction effect to the image */
+}
+
+
+.header-image img:hover {
+  transform: scale(1.1); /* Enlarge image by 10% */
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;  /* Vertically center-align image and text */
+  gap: 8px;             /* Increase the space between the image and the text */
+}
+
+.icon-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 4px solid #FFFBC2;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-title img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.title-group {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Title styling  */
+.site-title {
+  font-size: 2.5em; 
+  color: #333; 
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* Subtitle styling and alignment  */
+.tagline {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 5px 0 0 0;
+  font-style: italic;
+  text-align: left; /* Keep consistent left alignment with main title */
+}
+
+/*  Navigation Bar Styling */
+.main-nav {
+    display: flex;
+    justify-content: right;
+    gap: 2em;
+    background-color: #FFFDE7;
+    padding: 3px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #FF8FAB;
+    color: #fff;
+}
+
+
+/* container*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Hero */
+.hero {
+  background-color: #FFFDE7; 
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #FF8FAB;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Button Container Styling */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+/* Button Styling */
+.cta-buttons button {
+  background: linear-gradient(135deg, #FF8FAB, #FFD3B6); 
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cta-buttons button:hover {
+  background: linear-gradient(135deg, #FFD3B6, #A8E6CF);
+  transform: translateY(-2px);
+}
+
+.cta-buttons button:active {
+  transform: translateY(1px);
+}
+
+/* Map container style */
+#map-container {
+  display: block; /* Display the map container */
+  overflow: hidden; /* Prevent content from overflowing */
+  height: 0; /* Initial height is 0, hidden */
+  transition: height 0.5s ease-in-out; /* Smooth transition for height */
+  margin-top: 30px; /* Add some margin above the map container */
+}
+
+/* Map style */
+#mapdiv {
+  width: 100%; /* Set the width of the map to 100% */
+  height: 450px; /* Set a fixed height for the map */
+  border-radius: 8px; /* Add rounded corners to the map */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow around the map */
+}
+
+
+
+	
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ECFFFE;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.features div {
+  background-color: #FFF0F5; /* Light pink background */
+  padding: 20px;
+  border-left: 5px solid #FF8FAB; /* Left pink border */
+  border-radius: 8px;
+  margin: 10px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.features h3 {
+  margin-bottom: 10px;
+  color: #FF69B4; 
+}
+
+/* Card button style */
+.feature-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Hover to enlarge */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1); /* Enhance shadow */
+}
+
+
+
+.centre-card {
+  background-color: #d0f0fd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.centre-card h4 {
+  margin-bottom: 10px;
+}
+
+.centre-card p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.centre-card button {
+  background: #FF8FAB;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.centre-card button:hover {
+  background: #FFD3B6;
+  color: #333;
+}
+
+/*  About  */
+.about {
+  background-color: #f7faff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  color: #333;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  color: #A8E6CF;
+}
+
+
+/*ceter list-item*/
+.centre-item {
+  background: #FFF0F5; /* Use light pink background*/
+  border-left: 5px solid #FF8FAB; /*Pink left border*/
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the item*/
+  margin-bottom: 15px; /* Bottom margin */
+  width: 90%; /* Set width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow  */
+}
+
+.centre-item h4 {
+  font-size: 18px; /* Title font size */
+  color: #333; /* Title color */
+}
+
+.centre-item p {
+  font-size: 14px; /* Paragraph font size */
+  color: #666; /* Paragraph text color */
+}
+
+/*  Search + Filter Area */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add spacing between elements */
+    flex-wrap: wrap;
+    margin-bottom: 30px; /* Bottom spacing */
+    padding: 20px;
+	width: 100%;
+}
+
+/* Style the search box */
+#searchBox {
+    background: none;
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #FFD3B6; /* Border style */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 250px; 
+}
+
+
+
+/* Style the filter form container */
+#serviceForm {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style the select element */
+#serviceFilter {
+    background: linear-gradient(135deg, #FF8FAB, #FFD3B6);
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #FFD3B6; /* Border style */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 220px; /* Consistent width */
+}
+
+/* Style the option elements  */
+#serviceFilter option {
+    background-color: #FFD3B6;
+    color: #333;
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* On hover over select */
+#serviceFilter:hover {
+    background: linear-gradient(135deg, #FFD3B6, #A8E6CF);
+    transform: translateY(-3px); /* Hover effect  */
+}
+
+/* On click */
+#serviceFilter:active {
+    transform: translateY(1px); /* Click feedback */
+}
+
+/*Style the submit button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #FF8FAB, #FFD3B6);
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #FFD3B6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 120px; 
+}
+
+/* Hover and click effects for the submit button  */
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #FFD3B6, #A8E6CF);
+    transform: translateY(-3px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+.open-hours {
+  text-align: center;
+}
+#openHoursContainer {
+  clear: both; /* Clear any previous floats */
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Table styles */
+#openHoursContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+	 height: 300px;
+}
+
+#openHoursContainer th, #openHoursContainer td {
+    padding: 12px;
+    border: 1px solid #E7FFD9;
+}
+
+#openHoursContainer th {
+    background-color: #EAFFEA;
+    font-weight: bold;
+    color: #333;
+}
+
+#openHoursContainer td {
+    background-color: #EAFFEA;
+    color: #666;
+}
+
+/* Alternate row colors */
+#openHoursContainer tr:nth-child(even) td {
+    background-color: #FFFDE7;
+}
+
+/* Row hover effect */
+#openHoursContainer tr:hover td {
+    background-color: #B8FFF1;
+}
+
+#openHoursContainer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+
+/*  Footer */
+footer {
+  background-color: #EFFFEF;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 8px 8px 0 0;
+}
